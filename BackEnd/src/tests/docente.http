@@ -1,0 +1,30 @@
+GET http://localhost:3001/docentes
+########
+
+GET http://localhost:3001/docentes/3
+########
+
+POST http://localhost:3001/docentes
+Content-Type: application/json
+
+{
+    "id": 3,
+    "nombre": "Pedro",
+    "apellido": "Gomez",
+    "curso": "Arquitectura de datos"
+}
+
+#########
+
+PUT http://localhost:3001/docentes
+Content-Type: application/json
+
+{
+    "id": 1,
+    "nombre": "Pedro",
+    "apellido": "Gome",
+    "curso": "Arquitectura de datos"
+}
+
+#########
+DELETE http://localhost:3001/docentes/3
